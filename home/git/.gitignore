@@ -1,0 +1,11 @@
+*.[oa]
+*.py[co]
+*.so
+*.sw[nop]
+*~
+.#*
+[#]*#
+.project
+.pydevproject
+*.pyc
+.settings/org.eclipse.*
