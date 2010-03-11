@@ -12,6 +12,9 @@ fi
 # Add my software area
 [ -d $HOME/software ] && export PATH=$PATH:$HOME/software/bin
 
+# must press ctrl-D 2+1 times to exit shell
+export IGNOREEOF="2"
+
 export SVN_EDITOR=vi
 #export CXX="ccache g++"
 export CCACHE_DIR="${HOME}/tmp/.ccache"
