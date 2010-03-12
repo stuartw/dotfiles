@@ -10,7 +10,7 @@ if [ -r $HOME/.bashrc ]; then
 fi
 
 # Add my software area
-[ -d $HOME/software ] && export PATH=$PATH:$HOME/software/bin
+[ -d $HOME/software ] && export PATH=$HOME/software/bin:$PATH
 
 # must press ctrl-D 2+1 times to exit shell
 export IGNOREEOF="2"
