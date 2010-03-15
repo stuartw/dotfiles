@@ -9,6 +9,12 @@ if [ -r $HOME/.bashrc ]; then
   . $HOME/.bashrc
 fi
 
+# Need to bring this in for mac as this is where macports puts its path settings
+# Source explicitly as .bash_profile causes .profile to be ignored
+if [ -r $HOME/.profile ]; then
+  . $HOME/.profile
+fi
+
 # Add my software area
 [ -d $HOME/software ] && export PATH=$HOME/software/bin:$PATH
 
@@ -48,13 +54,4 @@ if [ -e /etc/bash_completion ]; then
   . /etc/bash_completion
 elif [ -e /opt/local/etc/bash_completion ]; then
   . /opt/local/etc/bash_completion
-fi
-if [ -d /etc/bash_completion.d ]; then
-  for f in /etc/bash_completion.d/*; do
-    . $f
-  done
-elif [ -d /opt/local/etc/bash_completion.d ]; then
-  for f in /opt/local/etc/bash_completion.d/*; do
-    . $f
-  done
 fi
