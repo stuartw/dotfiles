@@ -44,17 +44,17 @@ fi
 
 
 # TODO: copy these locally as not all mchines have them
-if [ -d /etc/bash_completion.d ]; then
-  for f in /etc/bash_completion.d; do
-    . /etc/bash_completion.d/f
-  done
-elif [ -d /opt/local/etc/bash_completion.d ]; then
-  for f in /opt/local/etc/bash_completion.d; do
-    . /opt/local/bash_completion.d/f
-  done
-fi
 if [ -e /etc/bash_completion ]; then
-  . /etc/bash_completion  
+  . /etc/bash_completion
 elif [ -e /opt/local/etc/bash_completion ]; then
   . /opt/local/etc/bash_completion
+fi
+if [ -d /etc/bash_completion.d ]; then
+  for f in /etc/bash_completion.d/*; do
+    . $f
+  done
+elif [ -d /opt/local/etc/bash_completion.d ]; then
+  for f in /opt/local/etc/bash_completion.d/*; do
+    . $f
+  done
 fi
