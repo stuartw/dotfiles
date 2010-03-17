@@ -33,13 +33,13 @@ export PROMPT_COMMAND="history -a; history -n"
 export HISTIGNORE="pwd:ls:ls -lh:ls -lhrt:w:vim:python:bc"
 
 # Shell sink stuff
-#which shellsink-client &>/dev/null
-#if [ $? -eq 0 ]; then
-#  SHELL_SINK_COMMAND="shellsink-client"
-#  export SHELL_SINK_ID=""
-#  export SHELL_SINK_TAGS="${HOSTNAME}"
-#  export PROMPT_COMMAND="${PROMPT_COMMAND};$SHELL_SINK_COMMAND"
-#fi
+which shellsink-client &>/dev/null
+if [ $? -eq 0 ]; then
+  SHELL_SINK_COMMAND="shellsink-client"
+  export SHELL_SINK_ID=`cat ${HOME}/.private/shellsinkid 2>/dev/null`
+  export SHELL_SINK_TAGS="${HOSTNAME}"
+  export PROMPT_COMMAND="${PROMPT_COMMAND};$SHELL_SINK_COMMAND"
+fi
 
 #eval `ssh-agent`
 
