@@ -29,12 +29,17 @@ export CCACHE_DIR="${HOME}/tmp/.ccache"
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
+export PROMPT_COMMAND="history -a; history -n"
+export HISTIGNORE="pwd:ls:ls -lh:ls -lhrt:w:vim:python:bc"
 
 # Shell sink stuff
-#export SHELL_SINK_COMMAND=shellsink-client
-#export SHELL_SINK_ID=""
-#export SHELL_SINK_TAGS=""
-#PROMPT_COMMAND="history -a;$SHELL_SINK_COMMAND"
+#which shellsink-client &>/dev/null
+#if [ $? -eq 0 ]; then
+#  SHELL_SINK_COMMAND="shellsink-client"
+#  export SHELL_SINK_ID=""
+#  export SHELL_SINK_TAGS="${HOSTNAME}"
+#  export PROMPT_COMMAND="${PROMPT_COMMAND};$SHELL_SINK_COMMAND"
+#fi
 
 #eval `ssh-agent`
 
