@@ -10,4 +10,5 @@ DESTDIR=${HOME}/.ssh
 install: $(FILES)
 
 $(FILES):
+	mkdir -p ${DESTDIR}
 	${INSTALL} $@ ${DESTDIR}
