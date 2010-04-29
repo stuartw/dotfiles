@@ -28,3 +28,5 @@ $GLOBAL_SETTING help.autocorrect 1
 $GLOBAL_SETTING alias.my-cvsimport "cvsimport -k"
 $GLOBAL_SETTING alias.my-cvsexportcommit "cvsexportcommit -p -v -c"
 $GLOBAL_SETTING alias.my-merge "merge --no-ff"
+$GLOBAL_SETTING alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit"
+$GLOBAL_SETTING alias.lola "log --graph --decorate --pretty=oneline --abbrev-commit --all"
