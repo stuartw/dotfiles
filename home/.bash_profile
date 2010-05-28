@@ -46,6 +46,9 @@ fi
 # python
 export PYTHONSTARTUP=${HOME}/.pythonrc
 
+# cvs stuff
+alias cvs-status="cvs -q status | grep ^[?F] | grep -v \"to-date\""
+
 # cms stuff
 if [ -e /vols ]; then
   alias setup_cms=". /vols/cms/grid/setup.sh" # -arch=slc3_ia32_gcc323"
