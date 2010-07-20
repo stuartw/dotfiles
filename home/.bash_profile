@@ -54,8 +54,10 @@ if [ -e /vols ]; then
   alias setup_cms=". /vols/cms/grid/setup.sh" # -arch=slc3_ia32_gcc323"
 fi
 
-
-
+# grid stuff
+alias vomscms="voms-proxy-init -voms cms --valid 96:00"
+alias vomscmsprod="voms-proxy-init -voms cms:/cms/Role=production --valid 96:00"
+alias vomscmssw="voms-proxy-init -voms cms:/cms/Role=lcgadmin --valid 96:00"
 
 # TODO: copy these locally as not all mchines have them
 if [ -e /etc/bash_completion ]; then
