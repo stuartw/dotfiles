@@ -1,0 +1,30 @@
+[user]
+	name = stuartw
+	email = stuart.wakefield@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[merge]
+#	tool = opendiff
+        tool = p4merge
+	summary = true
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+	my-cvsimport = cvsimport -k
+	my-cvsexportcommit = cvsexportcommit -p -v -c
+	my-merge = merge --no-ff
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[help]
+	autocorrect = 1
+[mergetool "p4merge"]
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[github]
+	user = stuartw
+	token = CHANGEME

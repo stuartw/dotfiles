@@ -1,5 +1,0 @@
-Protocol 2
-Host *
-  GSSAPIAuthentication yes
-Host *.fnal.gov
-  GSSAPIDelegateCredentials yes
