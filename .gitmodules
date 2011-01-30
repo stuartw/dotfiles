@@ -1,8 +1,8 @@
 [submodule "home/vim/bundle/nerdtree"]
-	path = home/vim/bundle/nerdtree
+	path = .vim/bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
 [submodule "home/vim/bundle/fugitive"]
-	path = home/vim/bundle/fugitive
+	path = .vim/bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
