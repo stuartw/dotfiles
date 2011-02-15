@@ -12,7 +12,20 @@ filetype plugin indent on
 :set laststatus=2
 :set hls is
 :syntax enable
-
+" display line numbers
+:set number
+" Toggle line numbers and fold column for easy copying:
+nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 ":set spell
 
-:set formatprg=par\ -rw78
+:set formatprg=par\ -rw78i
+
+"miniBufExp variables
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+
+" Task list
+map T :TaskList<CR>
+map P :TlistToggle<CR>

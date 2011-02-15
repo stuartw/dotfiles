@@ -7,3 +7,12 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule ".vim/bundle/minibufexpl"]
+	path = .vim/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule ".vim/bundle/taglist"]
+	path = .vim/bundle/taglist
+	url = https://github.com/mexpolk/vim-taglist.git
+[submodule ".vim/bundle/tasklist"]
+	path = .vim/bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git
