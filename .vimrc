@@ -29,3 +29,7 @@ let g:miniBufExplModSelTarget = 1
 " Task list
 map T :TaskList<CR>
 map P :TlistToggle<CR>
+
+" pylint
+autocmd FileType python let &makeprg='pylint-2.6 % -i y -r n -f parseable'
+autocmd BufWritePost *.py make
