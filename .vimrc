@@ -9,6 +9,8 @@ call pathogen#runtime_append_all_bundles()
 
 filetype plugin indent on
 
+set backspace=indent,eol,start
+
 :set laststatus=2
 :set hls is
 :syntax enable
