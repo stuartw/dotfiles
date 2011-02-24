@@ -25,6 +25,8 @@
 	keepTemporaries = false
 	trustExitCode = false
 	keepBackup = false
+[apply]
+	whitespace = fix
 [github]
 	user = stuartw
 	token = CHANGEME
