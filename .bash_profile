@@ -21,7 +21,9 @@ fi
 # must press ctrl-D 2+1 times to exit shell
 export IGNOREEOF="2"
 
-export SVN_EDITOR=vi
+export EDITOR=vi
+export VISUAL=${EDITOR} #Needed by cron apparently
+
 #export CXX="ccache g++"
 export CCACHE_DIR="${HOME}/tmp/.ccache"
 

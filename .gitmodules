@@ -16,3 +16,9 @@
 [submodule ".vim/bundle/tasklist"]
 	path = .vim/bundle/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule ".emacs.d/slime"]
+	path = .emacs.d/slime
+	url = https://github.com/nablaone/slime.git
+[submodule ".emacs.d/swank-chicken"]
+	path = .emacs.d/swank-chicken
+	url = https://github.com/nickg/swank-chicken.git
