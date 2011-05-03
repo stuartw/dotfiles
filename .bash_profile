@@ -15,6 +15,11 @@ if [ -r $HOME/.profile ]; then
   . $HOME/.profile
 fi
 
+# Some sites - mentioning no names - mess up the backspace
+if [ $(stty -a | grep erase | grep -c '^?') -eq 0 ]; then
+  stty erase '^?'
+fi 
+
 # Add my software area
 [ -d $HOME/software ] && export PATH=$HOME/software/bin:$PATH
 
