@@ -22,6 +22,8 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 :set formatprg=par\ -rw78i
 
+:set scrolloff=1000
+
 "miniBufExp variables
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
