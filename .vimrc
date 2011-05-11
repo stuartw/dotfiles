@@ -1,7 +1,7 @@
 "This must be first, because it changes other options as side effect
 set nocompatible
 
-"ifiletype off
+filetype off
 
 "include all plugins and generate help
 call pathogen#helptags()
@@ -34,6 +34,8 @@ let g:miniBufExplModSelTarget = 1
 map T :TaskList<CR>
 map P :TlistToggle<CR>
 
-" pylint
-autocmd FileType python let &makeprg='pylint-2.6 % -i y -r n -f parseable'
-autocmd BufWritePost *.py make
+" pylint - commented out for now
+" autocmd FileType python let &makeprg='pylint-2.6 % -i y -r n -f parseable'
+" autocmd BufWritePost *.py make
+
+nnoremap <F5> :GundoToggle<CR>
