@@ -40,3 +40,8 @@ map P :TlistToggle<CR>
 " autocmd BufWritePost *.py make
 
 nnoremap <F5> :GundoToggle<CR>
+
+" Pasting into the terminal gives problems with indent mode, toggle paste mode 
+" in insert mode and the indent level of the orginal text is preserved
+" taken from http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
+set pastetoggle=<F2>
