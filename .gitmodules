@@ -40,3 +40,15 @@
 [submodule ".vim/bundle/vimpdb"]
 	path = .vim/bundle/vimpdb
 	url = https://github.com/gotcha/vimpdb.git
+[submodule ".vim/bundle/slimv"]
+	path = .vim/bundle/slimv
+	url = https://github.com/vim-scripts/slimv.vim.git
+[submodule ".vim/bundle/SearchComplete"]
+	path = .vim/bundle/SearchComplete
+	url = https://github.com/vim-scripts/SearchComplete.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule ".vim/bundle/vim-sparkup"]
+	path = .vim/bundle/vim-sparkup
+	url = https://github.com/ruprict/vim-sparkup.git

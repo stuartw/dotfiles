@@ -10,10 +10,32 @@ call pathogen#runtime_append_all_bundles()
 filetype on
 filetype plugin indent on
 
+" tab is 4 spaces
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+" replace tab with spaces
+set expandtab
+
 set backspace=indent,eol,start
 
-:set laststatus=2
+let mapleader = ","
+
+" Searching options
+" turn off vim specific regex sntax - use regular regex instead
+nnoremap / /\v
+vnoremap / /\v
+" be case sensititve only if mixed case in regex
+set ignorecase
+set smartcase
+" replace matches on whole line - i.e. no need for g in :%s/foo/bar/g any more
+set gdefault
 :set hls is " highlight searches
+" tab on a bracket to jump to its partner
+nnoremap <tab> %
+vnoremap <tab> %
+
+:set laststatus=2
 :syntax on
 
 " display line numbers
@@ -58,3 +80,8 @@ set pastetoggle=<F2>
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
+
+set guioptions+=m
+
+" slime stuff
+let g:slimv_lisp = "/opt/local/bin/chicken"

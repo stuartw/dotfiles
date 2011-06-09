@@ -7,6 +7,10 @@
 
 (load (concat dotfiles-dir "org-mode.el"))
 
+;; add to path and load modules
 (setq vendor-dir (concat dotfiles-dir "vendor/"))
-;; find out why this fails
-;; (load (concat vendor-dir "slime.el"))
+
+(let ((default-directory vendor-dir))
+        (normal-top-level-add-subdirs-to-load-path))
+
+(load (concat vendor-dir "slime.el"))
