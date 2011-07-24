@@ -85,3 +85,6 @@ set guioptions+=m
 
 " slime stuff
 let g:slimv_lisp = "/opt/local/bin/chicken"
+
+" use w!! to write file with sudo
+cmap w!! %!sudo tee > /dev/null %
