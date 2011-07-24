@@ -26,6 +26,8 @@ for SOURCE in ${SOURCES}; do
 	else
 		cp -fr ${SOURCE} ${DEST}
 		#${INSTALL} ${SOURCE}/ ${DEST}
+        #see if this stops directories being created in existing directories
+        #rsync -qr --delete --exclude=git oh-my-zsh/ $HOME/.oh-my-zsh
 	fi
 done
 

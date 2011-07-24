@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/vim-sparkup"]
 	path = .vim/bundle/vim-sparkup
 	url = https://github.com/ruprict/vim-sparkup.git
+[submodule "vendor/oh-my-zsh"]
+	path = vendor/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
