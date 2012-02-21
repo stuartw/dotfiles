@@ -22,7 +22,7 @@ for SOURCE in ${SOURCES}; do
 	if [ -e ${SOURCE}/install.sh ]; then
 		pushd ${SOURCE}
 		./install.sh
-		popd ${SOURCE}
+		popd
 	else
 		cp -fr ${SOURCE} ${DEST}
 		#${INSTALL} ${SOURCE}/ ${DEST}
