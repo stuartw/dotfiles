@@ -1,6 +1,8 @@
 "This must be first, because it changes other options as side effect
 set nocompatible
 
+" turn filetype on to avoid non-zero exit code at exit
+filetype on
 filetype off
 
 "include all plugins and generate help
