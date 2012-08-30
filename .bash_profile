@@ -33,8 +33,8 @@ export VISUAL=${EDITOR} #Needed by cron apparently
 export CCACHE_DIR="${HOME}/tmp/.ccache"
 
 # history
-export HISTCONTROL=erasedups
-export HISTSIZE=10000
+#export HISTCONTROL=erasedups
+export HISTSIZE=100000
 shopt -s histappend
 export PROMPT_COMMAND="history -a; history -n"
 
@@ -61,4 +61,11 @@ if [ -e /etc/bash_completion ]; then
   . /etc/bash_completion
 elif [ -e /opt/local/etc/bash_completion ]; then
   . /opt/local/etc/bash_completion
+elif [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
+# autojump
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
 fi
