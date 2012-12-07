@@ -21,7 +21,7 @@ if [ $(stty -a | grep erase | grep -c '^?') -eq 0 ]; then
 fi 
 
 # Add my software area
-[ -d $HOME/software ] && export PATH=$HOME/software/bin:$PATH
+[ -d $HOME/sw ] && export PATH=$HOME/sw/bin:$PATH
 
 # must press ctrl-D 2+1 times to exit shell
 export IGNOREEOF="2"
@@ -30,7 +30,7 @@ export EDITOR=vim
 export VISUAL=${EDITOR} #Needed by cron apparently
 
 # history
-export HISTSIZE=10000
+export HISTSIZE=100000
 
 #eval `ssh-agent`
 
