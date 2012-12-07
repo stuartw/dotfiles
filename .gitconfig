@@ -7,8 +7,7 @@
 	branch = auto
 	interactive = auto
 [merge]
-#	tool = opendiff
-        tool = p4merge
+    tool = meld
 	summary = true
 [core]
 	excludesfile = ~/.gitignore
@@ -25,6 +24,10 @@
 	keepTemporaries = false
 	trustExitCode = false
 	keepBackup = false
+[mergetool "meld"]
+    keepTemporaries = false
+    trustExitCode = false
+    keepBackup = false
 [apply]
 	whitespace = fix
 [github]
